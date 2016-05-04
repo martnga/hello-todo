@@ -12,11 +12,9 @@
 
     </head>
     <body>
-        <div class="jumbotron">
-  		<h1>ToDo Laravel!</h1>
-  		<p>We have been waiting for you amigo. La Casa that is going to be Su Casa. Sit down and relax</p>
-  		<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-	</div>
+        @section('sidebar')
+            This is the master sidebar.
+        @show
 
         <div class="container">
 	@if (Session::has('message'))
